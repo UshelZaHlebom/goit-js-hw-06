@@ -15,14 +15,14 @@ const images = [
 
 
 
-const galleryList = document.querySelector(`.gallery`);
-galleryList.style.listStyleType = "none";
-galleryList.style.display = "flex"
-galleryList.style.flexDirection = "column-reverse"
-galleryList.style.alignItems = "center"
+const galleryListRef = document.querySelector(`.gallery`);
+galleryListRef.style.listStyleType = "none";
+galleryListRef.style.display = "flex"
+galleryListRef.style.flexDirection = "column-reverse"
+galleryListRef.style.alignItems = "center"
 const markup = images.map((images) => `<li class="list-itemnew"><img src=${images.url} alt=${images.alt} width=400></li>` ).join(``);
 
-galleryList.insertAdjacentHTML(`beforeend`, markup)
+galleryListRef.insertAdjacentHTML(`beforeend`, markup)
 
 
 

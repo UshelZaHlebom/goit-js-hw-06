@@ -1,17 +1,17 @@
-let inputValue = document.querySelector(`#validation-input`);
-let allowedLength = inputValue.getAttribute(`data-length`);
+let inputValueRef = document.querySelector(`#validation-input`);
+let allowedLengthRef = inputValueRef.getAttribute(`data-length`);
 
 
-inputValue.addEventListener("blur", () => {
+inputValueRef.addEventListener("blur", () => {
     
-    let utilityArray = Array.from(inputValue.value)
+    let utilityArray = Array.from(inputValueRef.value)
     
-    if (utilityArray.length === allowedLength*1){
-        inputValue.classList.add(`#validation-input.valid`);
-        inputValue.classList.remove(`#validation-input.invalid`);
+    if (utilityArray.length === allowedLengthRef*1){
+        inputValueRef.classList.add(`#validation-input.valid`);
+        inputValueRef.classList.remove(`#validation-input.invalid`);
     } else {
-        inputValue.classList.add(`#validation-input.invalid`);
-        inputValue.classList.remove(`#validation-input.valid`);
+        inputValueRef.classList.add(`#validation-input.invalid`);
+        inputValueRef.classList.remove(`#validation-input.valid`);
     }
     
 });

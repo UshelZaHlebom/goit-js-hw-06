@@ -7,12 +7,12 @@ const ingredients = [
   'Condiments',
 ];
 
-const vegetableList=document.querySelector(`#ingredients`)
+const vegetableListRef=document.querySelector(`#ingredients`)
 
 for(let i=0;i<ingredients.length;i++){
 const vegetableListItem = document.createElement(`li`);
 vegetableListItem.classList.add(`item`);
 vegetableListItem.textContent = `${ingredients[i]}`;
-vegetableList.append(vegetableListItem)
+vegetableListRef.append(vegetableListItem)
 }
 
