@@ -7,11 +7,11 @@ inputValueRef.addEventListener("blur", () => {
     let utilityArray = Array.from(inputValueRef.value)
     
     if (utilityArray.length === allowedLengthRef*1){
-        inputValueRef.classList.add(`#validation-input.valid`);
-        inputValueRef.classList.remove(`#validation-input.invalid`);
+        inputValueRef.classList.add(`valid`);
+        inputValueRef.classList.remove(`invalid`);
     } else {
-        inputValueRef.classList.add(`#validation-input.invalid`);
-        inputValueRef.classList.remove(`#validation-input.valid`);
+        inputValueRef.classList.add(`invalid`);
+        inputValueRef.classList.remove(`valid`);
     }
     
 });
