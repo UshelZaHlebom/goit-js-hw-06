@@ -4,7 +4,7 @@ const theBody = document.body;
 
 changeButtonRef.addEventListener('click', () => {
   theBody.style.backgroundColor = getRandomHexColor();
-  colorInfoRef.textContent = getRandomHexColor();
+  colorInfoRef.textContent = theBody.style.backgroundColor;
 });
 
 
